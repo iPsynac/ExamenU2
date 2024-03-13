@@ -30,7 +30,6 @@ class RegalosActivity : AppCompatActivity() {
     }
 
     fun agregarDetalles(option:String?){
-        var detalles=ArrayList<Detalles>()
         var title:TextView = findViewById(R.id.title)
 
         when(option){
@@ -42,6 +41,40 @@ class RegalosActivity : AppCompatActivity() {
                 detalles.add(Detalles(R.drawable.cumplesnack,"$190"))
                 detalles.add(Detalles(R.drawable.cumplepaletas,"$150"))
                 detalles.add(Detalles(R.drawable.cumplevinos,"$370"))
+            }
+            "Globos"->{
+                title.setText("Globos")
+                detalles.add(Detalles(R.drawable.globoamor,"$240"))
+                detalles.add(Detalles(R.drawable.globocumple,"$820"))
+                detalles.add(Detalles(R.drawable.globofestejo,"$260"))
+                detalles.add(Detalles(R.drawable.globonum,"$760"))
+                detalles.add(Detalles(R.drawable.globoregalo,"$150"))
+                detalles.add(Detalles(R.drawable.globos,"$240"))
+            }
+            "Peluches"->{
+                title.setText("Peluches")
+                detalles.add(Detalles(R.drawable.peluchemario,"$320"))
+                detalles.add(Detalles(R.drawable.pelucheminecraft,"$290"))
+                detalles.add(Detalles(R.drawable.peluches,"$700"))
+                detalles.add(Detalles(R.drawable.peluchesony,"$330"))
+                detalles.add(Detalles(R.drawable.peluchestich,"$280"))
+                detalles.add(Detalles(R.drawable.peluchevarios,"$195"))
+            }
+            "Regalos"->{
+                title.setText("Regalos")
+                detalles.add(Detalles(R.drawable.regaloazul,"$80"))
+                detalles.add(Detalles(R.drawable.regalobebe,"$290"))
+                detalles.add(Detalles(R.drawable.regalocajas,"$140"))
+                detalles.add(Detalles(R.drawable.regalocolores,"$85"))
+                detalles.add(Detalles(R.drawable.regalos,"$1000"))
+                detalles.add(Detalles(R.drawable.regalovarios,"$75"))
+            }
+            "Tazas"->{
+                title.setText("Tazas")
+                detalles.add(Detalles(R.drawable.tazaabuela,"$120"))
+                detalles.add(Detalles(R.drawable.tazalove,"$120"))
+                detalles.add(Detalles(R.drawable.tazaquiero,"$260"))
+                detalles.add(Detalles(R.drawable.tazas,"$280"))
 
             }
         }

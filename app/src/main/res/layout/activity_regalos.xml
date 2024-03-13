@@ -31,13 +31,13 @@
             android:layout_marginTop="2dp"/>
     </LinearLayout>
 
-    <GridLayout
+    <GridView
         android:id="@+id/catalogo"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:columnCount="3"
+        android:layout_height="match_parent"
+        android:numColumns="3"
         android:layout_marginTop="20dp"
-        android:paddingHorizontal="6dp"/>
+        android:paddingHorizontal="2dp"/>
 
 
 
